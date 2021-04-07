@@ -72,6 +72,21 @@ public class payload {
                 "\n" +
                 "}";
     }
+
+    public static String addBook(String isbnn, String aislee){
+        String addBookPayload= "{\n" +
+                "\n" +
+                "\"name\":\"Learn Appium Automation with Java\",\n" +
+                "\"isbn\":\"" //First string terminated here
+                +isbnn+ //Value inserted here
+                "\",\n" +// Another string concatenated.
+                "\"aisle\":\""
+                +aislee+
+                "\",\n" +
+                "\"author\":\"John foe\"\n" +
+                "}";
+        return addBookPayload;
+    }
 }
 
 
